@@ -1,12 +1,11 @@
 import React from "react";
 import Chat from "./components/Chat";
-import ChatMessage from "./components/ChatMessage";
 
 function App() {
   return (
-    <main>
-      <h1 className="font-bold text-green-500">Hello world</h1>
-    </main>
+    <div className="min-h-screen w-full bg-gradient-to-br from-blue-50 via-white to-blue-50">
+      <Chat />
+    </div>
   );
 }
 
