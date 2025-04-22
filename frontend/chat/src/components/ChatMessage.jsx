@@ -26,7 +26,7 @@ const ChatMessage = ({ message, isAi }) => {
               isAi ? "text-blue-900" : "text-green-900"
             }`}
           >
-            {isAi ? "Progskill AI Assistant" : "You"}
+            {isAi ? "Ndungu's AI Assistant" : "You"}
           </p>
         </div>
         <div className="prose prose-sm max-w-none">

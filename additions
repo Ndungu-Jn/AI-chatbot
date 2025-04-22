@@ -1,1 +1,4 @@
  npm install @headlessui/react @heroicons/react @tailwindcss/typography
+ for backend -- npm init -y --  for the package.json file
+for depndancies  all that is needed is -- npm install express dotenv cors openai
+nodemon
