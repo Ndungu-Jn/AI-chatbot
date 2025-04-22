@@ -1,3 +1,7 @@
+import React from "react";
+import Chat from "./components/Chat";
+import ChatMessage from "./components/ChatMessage";
+
 function App() {
   return (
     <main>
