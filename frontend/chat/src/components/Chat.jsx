@@ -20,7 +20,7 @@ const Chat = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!input.trim()) return;
+    if (!input.trim()) return; // prevents the submission if there is no input
 
     const userMessage = input.trim();
     setInput("");
