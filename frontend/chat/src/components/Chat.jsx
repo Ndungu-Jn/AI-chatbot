@@ -20,7 +20,7 @@ const Chat = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!input.trim()) return; // prevents the submission if there is no input
+    if (!input.trim()) return;
 
     const userMessage = input.trim();
     setInput("");
@@ -92,9 +92,9 @@ const Chat = () => {
         )}
         {isLoading && (
           <div className="flex items-center justify-center space-x-2 p-4">
-            <div className="animate-bounce h-2 w-2 bg-pink-500 rounded-full"></div>
-            <div className="animate-bounce h-2 w-2 bg-pink-500 rounded-full delay-100"></div>
-            <div className="animate-bounce h-2 w-2 bg-pink-500 rounded-full delay-200"></div>
+            <div className="animate-bounce h-2 w-2 bg-purple-500 rounded-full"></div>
+            <div className="animate-bounce h-2 w-2 bg-purple-500 rounded-full delay-100"></div>
+            <div className="animate-bounce h-2 w-2 bg-purple-500 rounded-full delay-200"></div>
           </div>
         )}
         <div ref={messagesEndRef} />

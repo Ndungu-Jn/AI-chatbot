@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const Deepseek = require("deepseek");
+const OpenAI = require("openai");
 
 // Load environment variables
 dotenv.config();
@@ -12,9 +12,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Initialize Deepseek.
-const deepseek = new Deepseek({
-  apiKey: process.env.DEEPSEEK_API_KEY,
+// Initialize OpenAI
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 // Chat endpoint
@@ -26,8 +26,8 @@ app.post("/api/chat", async (req, res) => {
       return res.status(400).json({ error: "Message is required" });
     }
 
-    const completion = await deepseek.chat.completions.create({
-      model: "deepseek/deepseek-r1:free",
+    const completion = await openai.chat.completions.create({
+      model: "gpt-3.5-turbo",
       messages: [
         {
           role: "system",
@@ -67,5 +67,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-console.log("Using API key:", process.env.DEEPSEEK_API_KEY);
