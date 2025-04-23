@@ -12,6 +12,14 @@ This project features a full-stack chatbot interface:
 - **Frontend**: Built using React with Tailwind CSS for styling. Utilizes `@headlessui/react`, `@heroicons/react`, and `@tailwindcss/typography` for accessible UI components and beautiful design.
 - **Backend**: Node.js with Express handles API requests. The OpenAI API is used to generate dynamic responses from the chatbot.
 
+## 🧠 Features
+
+- Chat interface using React
+- Backend API
+- Uses OpenAI's GPT model for generating responses
+- Styled with Tailwind CSS
+- Smooth development experience with nodemon
+  
 ## 🔧 Tech Stack
 
 **Frontend:**
